@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+<% blogposts.forEach(function(blogpost){ %>
+<div class="ui main container segment">
+	<h1><%= blogpost.title %></h1>
+	<p><em><%= blogpost.created.toDateString() %></em></p>
+	<div class="ui clearing divider"></div>
+	<img src="<%= blogpost.image %>">
+	<h3>
+		<%- blogpost.body.substring(0, 100) %>
+		<% if (blogpost.body.length <=100) { %>
+		<br>
+		<% } else { %>
+		... <br>
+		<% } %>
+	</h3>
+	<p><a href="/blogposts/<%= blogpost._id %>"><em>Read More >></em></a></p>
+</div>
+<div class="ui main container">
+	<h4 class="ui horizontal divider header">
+		<i class="gg icon"></i>
+	</h4>
+</div>
+<% }); %>
+
+<% include partials/footer %>

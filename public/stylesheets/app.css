@@ -1,0 +1,19 @@
+i.icon.large {
+	font-size: 2em;
+}
+
+i.icon.red {
+	color: crimson;
+}
+
+.container.main {
+	margin: 4.5em 0;
+}
+
+img {
+	width: 100%;
+}
+
+.item > .description {
+	padding-top: 20px;
+}
