@@ -8,7 +8,7 @@ var
 	expressSanitizer = require("express-sanitizer");
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost/restful_blog_app");
+mongoose.connect(process.env.DATABASEURL || "mongodb://localhost/restful_blog_app");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -105,7 +105,7 @@ app.delete("/blogposts/:id", function(req, res) {
 });
 
 // SERVER
-var PORT_NUM         = 3000;
+var PORT_NUM         = process.env.PORT || 3000;
 var SERVER_START_MSG = "*Server is up and running on port " + PORT_NUM + "!*";
 
 app.listen(PORT_NUM, function() {
