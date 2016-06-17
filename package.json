@@ -10,12 +10,12 @@
   "author": "Sabrina Tjeng",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "express-sanitizer": "^1.0.1",
-    "method-override": "^2.3.6",
-    "mongoose": "^4.4.17",
-    "semantic-ui": "^2.2.2"
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-sanitizer": "^1.0.2",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.7",
+    "semantic-ui": "^2.2.10"
   }
 }
